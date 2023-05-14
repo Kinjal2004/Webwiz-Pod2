@@ -6,15 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="about.css">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <script src="about.js"></script>
     <div class="container"></div>
     <div class="animation"></div>
-
-    <div class="text">We are a team</div>
+    <div class="heading">
+        <h3>#About Us</h3>
+    <h1>Not just any other technical club</h1>
     </div>
-</body>>
+    
+   <section>
+    
+    <div class="item">
+        <h1>Made for Students</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus obcaecati fuga rerum dolore quasi officia sapiente hic officiis praesentium corrupti nemo, voluptate ut atque illum repellat nulla deleniti ipsum!</p>
+    </div>
+    <div class="item">
+        <h1>Practical Guide</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus obcaecati fuga rerum dolore quasi officia sapiente hic officiis praesentium corrupti nemo, voluptate ut atque illum repellat nulla deleniti ipsum!</p>
+    </div>
+    <div class="item">
+        <h1>Development</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus minus obcaecati fuga rerum dolore quasi officia sapiente hic officiis praesentium corrupti nemo, voluptate ut atque illum repellat nulla deleniti ipsum!</p>
+    </div>
+   </section>
+   
+    </div>
+    <script>
+        ScrollReveal({
+    reset:true,
+    distance:'60px',
+    duration:2500,
+    delay:400
+});
+ScrollReveal().reveal('.heading', { delay: 300 });
+ScrollReveal().reveal('.item', { delay: 800 ,origin:'left'});
+
+    </script>
+</body>
 </html>
