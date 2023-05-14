@@ -13,9 +13,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <script src="about.js"></script>
+    
 </div>
-<header>
+<!--navbar-->
 <div class="navbar">
     <img class="logo" src="webwizlogo.png" alt="webwiz logo">
     <ul  class="links">
@@ -25,10 +25,30 @@
         <li><a href="team">Team</a></li>
     </ul>
     <div class="tgl_btn">
-        <i class="fa-sharp fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>
     </div>
 </div>
-</header>
+<div class="drop_menu">
+    <li><a href="Home">Home</a></li>
+    <li><a href="About">About</a></li>
+    <li><a href="Events">Events</a></li>
+    <li><a href="team">Team</a></li>   
+</div>
+<script>
+    const tgl_btn=document.querySelector('.tgl_btn')
+    const tgl_btnicon=document.querySelector('.tgl_btn i')
+    const dropdownmenu=document.querySelector('.drop_menu')
+    tgl_btn.onclick=function(){
+        dropdownmenu.classList.toggle('open')
+        const isOpen=dropdownmenu.classList.contains('open')
+        tgl_btnicon.classList= isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+
+</script>
+<!--Mainbody-->
     <div class="heading">
         <h3>#About Us</h3>
     <h1>Not just any other technical club</h1>
@@ -62,5 +82,23 @@ ScrollReveal().reveal('.heading', { delay: 200 });
 ScrollReveal().reveal('.item', { delay: 500 ,origin:'left'});
 
     </script>
+    <!--footer-->
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="copyright" >
+                Copyright &copy; 2023 All rights reserved
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-github fa-beat"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-instagram fa-beat"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-instagram fa-beat"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </footer>
 </body>
 </html>
